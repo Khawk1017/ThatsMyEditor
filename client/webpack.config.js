@@ -25,7 +25,7 @@ module.exports = () => {
         title: 'JATE',
       }),
       new InjectManifest({
-        swSrc: './src/sw.js',
+        swSrc: './src-sw.js',
         swDest: 'src-sw.js'
 
       }),
@@ -53,7 +53,7 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\].css$/i,
+          test: /\.css$/,
           use: ['style-loader', 'css-loader'], 
         },
         {
